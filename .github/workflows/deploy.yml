@@ -3,7 +3,11 @@ name: Deploy Quartz to Hostinger
 on:
   push:
     branches:
-      - v4 # Asegúrate de que este sea el nombre de tu rama principal
+      - v4
+
+# Esto soluciona el aviso de deprecación de Node.js 20
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 permissions:
   contents: read
@@ -15,12 +19,12 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Crucial para que Quartz lea las fechas de edición de los archivos
+          fetch-depth: 0
 
       - name: Setup Node 🏗️
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 24 # Actualizado a Node 24
 
       - name: Install Dependencies 📦
         run: npm ci
@@ -35,6 +39,5 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./public/
-          # IMPORTANTE: Ajusta esta ruta a la que veas en tu FTP de Hostinger
           server-dir: domains/etereal.erosguerrero.es/public_html/
           state-name: .ftp-deploy-sync-state.json
