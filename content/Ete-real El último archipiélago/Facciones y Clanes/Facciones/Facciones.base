@@ -1,0 +1,64 @@
+filters:
+  and:
+    - note["base"] == link("Facciones.base")
+properties:
+  file.name:
+    displayName: Nombre
+  Estado:
+    displayName: Estado
+  Alias:
+    displayName: Alias
+  Recursos:
+    displayName: Recursos
+  Historia:
+    displayName: Historia
+  Influencia/Poder:
+    displayName: Influencia/Poder
+  Objetivos:
+    displayName: Objetivos
+  Secretos:
+    displayName: Secretos
+  Sede:
+    displayName: Sede
+  Rituales/Prácticas:
+    displayName: Rituales/Prácticas
+  Estructura de liderazgo:
+    displayName: Estructura de liderazgo
+  Dogma/Creencias:
+    displayName: Dogma/Creencias
+  Fecha de fundación:
+    displayName: Fecha de fundación
+  Tipo:
+    displayName: Tipo
+  Lema:
+    displayName: Lema
+  Región:
+    displayName: Región
+  Ideología:
+    displayName: Ideología
+  Emblema:
+    displayName: Emblema
+  Miembros notables:
+    displayName: Miembros notables
+views:
+  - type: table
+    name: Table View
+    order:
+      - file.name
+      - Estado
+      - Alias
+      - Recursos
+      - Historia
+      - Influencia/Poder
+      - Objetivos
+      - Sede
+      - Estructura de liderazgo
+      - Dogma/Creencias
+      - Fecha de fundación
+      - Tipo
+      - Lema
+      - Región
+      - Ideología
+      - Emblema
+      - Miembros notables
+    cardSize: 270

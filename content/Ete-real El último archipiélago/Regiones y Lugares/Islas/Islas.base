@@ -1,0 +1,49 @@
+filters:
+  and:
+    - note["base"] == link("Islas.base")
+properties:
+  file.name:
+    displayName: Nombre de la Isla
+  Tipo:
+    displayName: Tipo / Función
+  Estado:
+    displayName: Estado Actual
+  Región:
+    displayName: Región
+  Bioma:
+    displayName: Bioma Dominante
+  Clima:
+    displayName: Clima
+  Población:
+    displayName: Población
+  Puntos de Interés:
+    displayName: Puntos de Interés
+  Recursos:
+    displayName: Recursos
+  Facciones:
+    displayName: Facciones Presentes
+  Conflictos:
+    displayName: Conflictos
+  Progreso:
+    displayName: Estado de Edición
+views:
+  - type: cards
+    name: 🗺️ Vista del Archipiélago
+    order:
+      - file.name
+      - Tipo
+      - Estado
+      - Recursos
+      - Puntos de Interés
+    cardSize: 300
+  - type: table
+    name: 📜 Índice de Islas
+    order:
+      - file.name
+      - Tipo
+      - Estado
+      - Bioma
+      - Población
+      - Facciones
+      - Recursos
+      - Progreso

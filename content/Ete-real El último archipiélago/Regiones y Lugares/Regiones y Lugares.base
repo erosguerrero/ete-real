@@ -1,0 +1,88 @@
+filters:
+  and:
+    - note["base"] == link("Regiones y Lugares.base")
+properties:
+  file.name:
+    displayName: Nombre del Lugar
+  Tipo:
+    displayName: Categoría (Ciudad, Ruina, Bioma)
+  Estado:
+    displayName: Situación Actual
+  Región:
+    displayName: Región/Continente
+  Isla:
+    displayName: Isla/Archipiélago
+  Ubicación Superior:
+    displayName: Parte de...
+  Bioma:
+    displayName: Bioma Dominante
+  Población:
+    displayName: Tamaño/Habitantes
+  Facciones:
+    displayName: Presencia de Facciones
+  NPCs:
+    displayName: Personajes Clave
+  Conflictos:
+    displayName: Tensiones y Amenazas
+  Misiones:
+    displayName: Ganchos de Aventura
+  Recursos:
+    displayName: Recursos y Comercio
+  Secretos:
+    displayName: Lore Oculto
+  Historia:
+    displayName: Resumen Histórico
+  Coordenadas:
+    displayName: Ubicación GPS/Mapa
+  Peligro:
+    displayName: Nivel de Riesgo
+  Peligro_Visual:
+    formula: star.repeat(Peligro)
+    displayName: Amenaza
+  Progreso:
+    displayName: Estado de Edición
+  Última Actualización:
+    displayName: Sincronizado
+  Imagen:
+    displayName: Ilustración/Mapa
+views:
+  - type: cards
+    name: 🗺️ Atlas Visual
+    order:
+      - file.name
+      - Tipo
+      - Región
+      - Peligro_Visual
+    imageProperty: Imagen
+    cardSize: 300
+  - type: table
+    name: 📜 Guía del Viajero (Jugadores)
+    order:
+      - file.name
+      - Tipo
+      - Isla
+      - Bioma
+      - Población
+      - Facciones
+      - NPCs
+      - Peligro_Visual
+  - type: table
+    name: ⚔️ Tramas y Conflictos (DM)
+    order:
+      - file.name
+      - Conflictos
+      - Misiones
+      - Secretos
+      - Facciones
+    sort:
+      - property: Peligro
+        direction: DESC
+  - type: table
+    name: 🏗️ Gestión de Worldbuilding
+    order:
+      - file.name
+      - Progreso
+      - Historia
+      - Ubicación Superior
+      - Coordenadas
+      - Última Actualización

@@ -1,0 +1,79 @@
+filters:
+  and:
+    - note["base"] == link("Personajes.base")
+properties:
+  file.name:
+    displayName: Nombre
+  Profesión:
+    displayName: Profesión / Ocupación
+  Faction:
+    type: option
+    options: Cofradía de la Ceniza, Consejo Plata, Consorcio Mercantil, El Alumbramiento, El Consejo Dorado, El Cónclave de la Rosa Blanca, Gremio de Aventureros, Hermandad de Navegantes, La Guardia Rosa Carmesí, Mano de Plata, Unión de la Raíz
+    displayName: Facción / Afiliación
+  Alineación:
+    displayName: Alineamiento Moral
+  Status:
+    displayName: Estado / Condición
+  Residencia:
+    type: relation
+    context:
+      - Islas.base
+      - Regiones y Lugares.base
+    displayName: Residencia Principal
+  Relationships:
+    type: relation
+    context: Personajes.base
+    displayName: Vínculos Conocidos
+  Biography:
+    displayName: Biografía Pública
+  Image:
+    displayName: Imagen / Retrato
+  First Appearance:
+    displayName: Primera Aparición
+  Persona:
+    displayName: Jugador/Autor
+views:
+  - type: table
+    name: Table View
+    order:
+      - file.name
+      - Profesión
+      - Faction
+      - Alineación
+      - Status
+      - Residencia
+      - Relationships
+      - Biography
+      - Image
+      - First Appearance
+      - Persona
+    sort:
+      - property: Faction
+        direction: DESC
+  - type: cards
+    name: 🃏 Galería de Personajes
+    order:
+      - file.name
+      - Profesión
+      - Faction
+      - Alineación
+      - Status
+    imageProperty: Image
+    cardSize: 300
+  - type: table
+    name: 📜 Directorio General (Público)
+    order:
+      - file.name
+      - Profesión
+      - Faction
+      - Status
+      - Alineación
+      - Residencia
+      - Relationships
+      - First Appearance
+  - type: table
+    name: 🛡️ Análisis de Afiliaciones
+    order:
+      - file.name
+      - Faction
+      - Relationships
