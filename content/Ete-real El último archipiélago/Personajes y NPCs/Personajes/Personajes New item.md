@@ -2,7 +2,7 @@
 Profesión: ""
 Persona: ""
 Estado: Active
-BiografÃ­a: ""
+Biografía: ""
 Residencia: ""
 Relaciones: ""
 ---

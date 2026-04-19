@@ -4,7 +4,7 @@ Profesión: Estudiante
 Alineación: True Neutral
 Persona: ""
 Estado: Active
-BiografÃ­a: ""
+Biografía: ""
 Residencia: ""
 Relaciones: ""
 Facción:

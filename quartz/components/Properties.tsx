@@ -1,6 +1,6 @@
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
-import { resolveRelative, slugifyFilePath, simplifySlug, FilePath } from "../util/path"
+import { resolveRelative, slugifyFilePath, simplifySlug, FilePath, transformLink } from "../util/path"
 
 export default (() => {
   function Properties({ fileData, displayClass }: QuartzComponentProps) {
@@ -45,8 +45,8 @@ export default (() => {
           alias = linkPath.split("/").pop()?.replace(/\.md$/, "") || linkPath
         }
 
-        const targetSlug = simplifySlug(slugifyFilePath(linkPath as FilePath))
-        const href = resolveRelative(fileData.slug!, targetSlug)
+        const allSlugs = allFiles.map((f) => f.slug!).filter(Boolean) as any[]
+        const href = transformLink(fileData.slug!, linkPath, { strategy: "shortest", allSlugs })
         
         return <a href={href} class="internal">{alias}</a>
       }
@@ -82,30 +82,29 @@ export default (() => {
           </svg>
           Información
         </h4>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))", gap: "1.2rem" }}>
-          {properties.map(([key, value]) => {
+        <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
+          {properties.map(([key, value], index) => {
             const displayKey = key
+            const isLast = index === properties.length - 1
             return (
               <div key={key} style={{ 
-                background: "var(--lightgray)",
-                padding: "1rem",
-                borderRadius: "8px",
-                border: "1px solid rgba(0,0,0,0.02)"
+                display: "flex",
+                flexDirection: "column",
+                padding: "0.8rem 0",
+                borderBottom: isLast ? "none" : "1px solid var(--lightgray)"
               }}>
                 <span style={{ 
-                  display: "block",
                   color: "var(--gray)", 
-                  fontSize: "0.75rem",
+                  fontSize: "0.80rem",
                   textTransform: "uppercase",
-                  letterSpacing: "0.08em",
-                  marginBottom: "0.4rem",
-                  fontWeight: 700
+                  letterSpacing: "0.05em",
+                  marginBottom: "0.3rem",
+                  fontWeight: 600
                 }}>{displayKey}</span>
                 <span style={{ 
                   color: "var(--dark)",
-                  fontSize: "0.95rem",
-                  display: "block",
-                  lineHeight: "1.5"
+                  fontSize: "1rem",
+                  lineHeight: "1.6"
                 }}>
                   {renderValue(value)}
                 </span>
