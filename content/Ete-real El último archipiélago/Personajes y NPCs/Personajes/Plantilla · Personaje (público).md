@@ -1,12 +1,12 @@
----
+﻿---
 base: "[[Personajes.base]]"
 Profesión: ""
 Alineación: True Neutral
 Persona: ""
-Status: Active
-Biography: ""
+Estado: Active
+BiografÃ­a: ""
 Residencia: ""
-Relationships: ""
+Relaciones: ""
 ---
 > [!note] 📌
 > **Ficha pública del personaje** (rellena solo lo que sea conocido o verificable en el mundo).

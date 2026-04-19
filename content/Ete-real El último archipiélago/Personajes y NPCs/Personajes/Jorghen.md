@@ -1,12 +1,12 @@
----
+﻿---
 base: "[[Personajes.base]]"
 Profesión: Guerrero
 Alineación: True Neutral
 Persona: ""
-Status: Active
-Biography: ""
+Estado: Active
+BiografÃ­a: ""
 Residencia: ""
-Relationships: ""
+Relaciones: ""
 Facción:
   - "[[content/Ete-real El último archipiélago/Facciones y Clanes/Facciones/La Guardia Rosa Carmesí.md]]"
 ---

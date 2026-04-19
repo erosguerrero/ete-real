@@ -1,8 +1,9 @@
----
+﻿---
 Profesión: ""
 Persona: ""
-Status: Active
-Biography: ""
+Estado: Active
+BiografÃ­a: ""
 Residencia: ""
-Relationships: ""
+Relaciones: ""
 ---
+
