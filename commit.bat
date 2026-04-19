@@ -1,6 +1,6 @@
 @echo off
 set msg=%~1
-if "%msg%"=="" set msg=Añadiendo index a las carpetas
+if "%msg%"=="" set msg=Nuevos cambios
 
 echo Ejecutando: git add .
 git add .

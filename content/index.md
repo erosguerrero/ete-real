@@ -6,10 +6,20 @@ title: Bienvenido a Ete-real
 
 Aquí, la historia no es estática: **evoluciona.**
 
-Universido conceptualizado y construido por: [Eros Guerrero](www.instagram.com/erosmahony)
+
+Tu viaje empieza [[content/Ete-real El último archipiélago|AQUÍ]]
+
+
+Universo conceptualizado y construido por: [Eros Guerrero](www.instagram.com/erosmahony)
 
 Si quieres apoyar el proyecto puedes:
--Promocionar Secreto de Reinas
--Comprar [Secreto de Reinas](https://www.amazon.es/Secreto-reinas-Eros-Guerrero/dp/8410111446) para amigos y familiares
--Invitarme a un café
--Mandarme cartas románticas con fotos de Cinnamorol (no poseo los derechos de Sanrio ni de ninguno de sus personajes)
+- Promocionar Secreto de Reinas
+- Comprar [Secreto de Reinas](https://www.amazon.es/Secreto-reinas-Eros-Guerrero/dp/8410111446) para amigos y familiares
+- Invitarme a un café
+- Mandarme[ cartas románticas](mailto:erosguer@gmail.com) con fotos de Cinnamorol (no poseo los derechos de Sanrio ni de ninguno de sus personajes)
+
+¡A disfrutar!
+
+> Por el Éter vivimos, y por el Éter moriremos [...] Al menos que encontremos la solución.
+
+
