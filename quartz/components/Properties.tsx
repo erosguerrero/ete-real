@@ -3,7 +3,7 @@ import { classNames } from "../util/lang"
 import { resolveRelative, slugifyFilePath, simplifySlug, FilePath, transformLink } from "../util/path"
 
 export default (() => {
-  function Properties({ fileData, displayClass }: QuartzComponentProps) {
+  function Properties({ fileData, allFiles, displayClass }: QuartzComponentProps) {
     if (!fileData.frontmatter || Object.keys(fileData.frontmatter).length === 0) {
       return null
     }
