@@ -40,6 +40,7 @@ jobs:
           local-dir: ./public/
           # PROBABLEMENTE ESTO SEA LO CORRECTO AHORA:
           server-dir: ./
-          # Añadimos esto para mayor estabilidad con Hostinger:
-          protocol: ftp
+          # Usamos ftps que es el estándar requerido por Hostinger
+          protocol: ftps
           port: 21
+          timeout: 300000 # Aumentamos el timeout a 5 minutos (evita errores de control socket)
