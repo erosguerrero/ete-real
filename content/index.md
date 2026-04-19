@@ -7,7 +7,7 @@ title: Bienvenido a Ete-real
 Aquí, la historia no es estática: **evoluciona.**
 
 
-Tu viaje empieza [[content/Ete-real El último archipiélago|AQUÍ]]
+Tu viaje empieza [[Ete-real-El-último-archipiélago/Ete-real-El-último-archipiélago|AQUÍ]]
 
 
 Universo conceptualizado y construido por: [Eros Guerrero](www.instagram.com/erosmahony)

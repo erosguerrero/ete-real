@@ -1,5 +1,5 @@
 ---
-base: "[[Facciones.base]]"
+base: "[[content/Ete-real El último archipiélago/Facciones y Clanes/Facciones/Facciones.base]]"
 Estado: Activo
 Alias: Los Señores del Intercambio
 Recursos: []

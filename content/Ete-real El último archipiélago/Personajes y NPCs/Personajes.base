@@ -38,16 +38,19 @@ views:
     order:
       - file.name
       - Profesión
-      - Faction
       - Alineación
       - Status
+      - Facción
       - Residencia
       - Relationships
       - Biography
       - Image
       - First Appearance
       - Persona
+      - Faction
     sort:
+      - property: Residencia
+        direction: ASC
       - property: Faction
         direction: DESC
   - type: cards

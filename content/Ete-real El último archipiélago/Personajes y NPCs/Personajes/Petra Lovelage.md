@@ -7,6 +7,8 @@ Status: Active
 Biography: ""
 Residencia: ""
 Relationships: ""
+Facción:
+  - "[[content/Ete-real El último archipiélago/Facciones y Clanes/Facciones/El Cónclave de la Rosa Blanca.md]]"
 ---
 > [!note] 📌
 > **Ficha pública del personaje** (rellena solo lo que sea conocido o verificable en el mundo).

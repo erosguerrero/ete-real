@@ -3,7 +3,6 @@ base: "[[Personajes.base]]"
 Profesión: Líder de gremio
 Persona: Adrian
 Status: Active
-Faction: ""
 Biography: |-
   Grott es un Lorwyn y líder visible del Gremio de Aventureros, una organización única y neutral.
 
@@ -11,6 +10,8 @@ Biography: |-
 
   La gestión cotidiana, logística y administrativa suele recaer en su secretaria, Margot, que mantiene el funcionamiento interno del gremio mientras Grott actúa como representante y figura de referencia.
 First Appearance: 2026-04-18
-Residencia: ""
+Residencia:
 Relationships: Margot (secretaria y encargada de la gestión interna del gremio).
+Facción:
+  - "[[content/Ete-real El último archipiélago/Facciones y Clanes/Facciones/Gremio de Aventureros.md]]"
 ---

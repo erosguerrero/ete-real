@@ -1,5 +1,7 @@
 ---
 cover: "[[Ete-real El último archipiélagoEte-real El último archipiélago]]"
+tags:
+  - space
 ---
 > Los faros funcionan gracias al Éter. Y nosotros funcionamos gracias a los faros.
 

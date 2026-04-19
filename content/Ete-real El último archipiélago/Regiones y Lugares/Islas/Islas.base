@@ -47,3 +47,5 @@ views:
       - Facciones
       - Recursos
       - Progreso
+  - type: table
+    name: Tabla
